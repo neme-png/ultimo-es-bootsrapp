@@ -1,54 +1,86 @@
-*{
+* {
     font-family: "Kanit", sans-serif;
 }
 
+body, html, header {
+    overflow-x: hidden; /* Impedisce lo scroll orizzontale */
+    margin: 0; /* Rimuove margini non necessari che possono causare il problema */
+    padding: 0; /* Rimuove padding che potrebbe causare problemi */
+}
 
-h1, h2, h3, .h1, .h2, .h3{
+
+h1, h2, h3, .h1, .h2, .h3 {
     font-family: "Genos", sans-serif;
 }
 
-header{
+header {
     background-image: url(Media/bg-1.jpg);
     height: 100vh;
 }
 
-.container{
+.container {
     width: 40vw;
     height: 99vh;
-    background-color: #3B1E54;
+    background-color: #3B1E54; /* Non tocco il colore */
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     color: white;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
-    
 }
 
-
-.titolo{
+.titolo {
     font-size: 50px;
 }
 
 /* ICONS */
-
-i{
+i {
     color: white;
     margin-top: 50px;
-    border: 1px solid var(--yl);
+    border: 1px solid #ffff01; /* Non tocco il colore */
     border-radius: 50%;
     padding: 40px;
-    background-color: var(--yl);
+    background-color: #ffff01; /* Non tocco il colore */
 }
 
-/* VARIABILI */
+/* Responsività per schermi piccoli */
+@media (max-width: 768px) {
+    .container {
+        width: 90vw; /* Più ampio su schermi piccoli */
+        height: auto; /* Lascia che l'altezza si adatti al contenuto */
+        padding: 20px;
+        border-radius: 0;
+    }
+    
+    .titolo {
+        font-size: 30px; /* Ridurre la dimensione del testo */
+        text-align: center; /* Allineamento per schermi più piccoli */
+    }
+    
+    form {
+        width: 100%; /* Form occupa tutta la larghezza disponibile */
+    }
 
-:root{
-    --yl: #ffff01;
+    .form-label {
+        font-size: 16px; /* Adattamento dimensioni testo per schermi piccoli */
+    }
+
+    .form-control {
+        font-size: 14px; /* Testo input più leggibile */
+    }
+
+    .bottone {
+        font-size: large;
+        padding: 12px 20px; /* Bottone più grande per una migliore interazione */
+    }
+
+    i {
+        padding: 25px; /* Icone più piccole su schermi piccoli */
+        font-size: 20px; /* Icona più piccola */
+    }
 }
 
-.bottone{
-    background-color: var(--yl);
-    font-size: large;
-}
+
+
 
  

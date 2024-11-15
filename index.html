@@ -18,64 +18,77 @@
     rel="stylesheet">
 </head>
 <body>
-    <header class="header-custom container-fluid d-flex">
+    <header class="header-custom col-12 container-fluid justify-content-center align-items-center d-flex">
         <div class="container-custom container my-5">
             <div class="row my-5">
-                <div class="col-12 col-md-6">
-                    <img class="" src="Media/aulab-logo_y.png" alt="">
-                    <p class="fs-3 my-5">WEBINAR GRATUITO</p>
-                    <h1 class="Titolo">Metti le mani<br>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <div class="col-12 text-center mb-3">
+                        <img class="img-fluid" src="Media/aulab-logo_y.png" alt="Logo Aulab">
+                    </div>
+                    <p class="fs-4 mb-3">WEBINAR GRATUITO</p>
+                    <h1 class="my-large-class fs-md-1">Metti le mani<br>
                         al codice divertendoti.
                     </h1>
                     <p class="fs-4">Scopri come si sviluppa un videogame anni 2000 </p>
                     <p class="fs-4">Ore 18:30</p>
-                    <div class="h1"> <i class="fa-solid fa-calendar-days my-5"></i> 11 Novembre 2024</div>
-                    <a href="form.html" target="_blank"><button class="iscriviti btn btn-circle btn-outline-light px-5 py-3">ISCRIVITI GRATUITAMENTE</button></a>
-                    
+                    <div class="h1"> <i class="fa-solid fa-calendar-days my-4"></i> 11 Novembre 2024</div>
+                    <a href="form.html" target="_blank">
+                        <button class="iscriviti btn btn-circle btn-outline-light px-4 py-2">ISCRIVITI GRATUITAMENTE
+                            
+                        </button></a>
                 </div>
-                <div class="col-6 col-rt">
+                <div class="col-12 col-md-6 text-center">
                     <img class="img-fluid" src="Media/game arcade.png" alt="">
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container-fluid d-flex text-center align-items-center">
-        <section class="img-fluid container-custom container col-md-6 col-sm-12">
-            <img src="Media/ico-gaming-def.png" class="img-custom" alt="">
-        </section>
-        <section class="col-md-6 fs-3 container-custom col-sm-12">
-            <h1 class="titolone mb-4">Impara le basi di HTML, CSS, <br>
-                Javascript e PHP in modo <br>
-                semplice e divertente</h1>
-            <p class="fw-lighter"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum dicta id soluta veritatis vel illo exercitationem nemo optio? Cumque, numquam quod impedit est animi pariatur! Eum velit necessitatibus quas!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quam cum, deserunt laudantium sequi nostrum harum! Itaque saepe harum, doloremque maiores consequuntur laboriosam soluta minus perspiciatis eius hic reprehenderit cupiditate.
-            </p>
+    <main class="container-fluid container-custom d-flex text-center align-items-center">
+        <section class="container-fluid d-flex flex-column flex-md-row align-items-center text-center">
+            <div class="img-fluid container col-md-6 col-sm-12 mb-4">
+                <img src="Media/ico-gaming-def.png" class="img-fluid img-custom" alt="Gaming Icon">
+            </div>
+            <div class="col-md-6 fs-4">
+                <h1 class="my-large-class fs-md-1 mb-4">
+                    Impara le basi di HTML, CSS, <br>
+                    Javascript e PHP in modo <br>
+                    semplice e divertente.
+                </h1>
+                <p class="fw-lighter">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum dicta id soluta veritatis vel illo exercitationem nemo optio.
+                </p>
+            </div>
         </section>
     </main>
-    <section class="aulab container-fluid d-flex text-center align-items-center">
-        <section class="img-fluid container-custom container col-md-6 col-sm-12">
-            <img src="Media/logo-aulab-futur.png" class="aulab-logo" alt="">
-        </section>
-        <section class="col-md-6 fs-3 container-custom col-sm-12">
-            <h1 class="titolone titolo-aulab">Chi è Aulab</h1>
-            <p class="fw-lighter me-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima tempore optio, aliquam dicta ipsam voluptatum sequi, accusamus repudiandae ad eius nihil. Odio expedita exercitationem nam odit, ipsam asperiores assumenda?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eveniet vel, earum omnis nisi, maxime minima laboriosam iste quis quibusdam illo qui et tempora recusandae a ad corrupti odit. Amet?
-            </p>
-        </section>
+
+    <section class="container-fluid text-center aulab container-custom py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-12 mb-4">
+                <img src="Media/logo-aulab-futur.png" class="img-fluid" alt="Logo Aulab">
+            </div>
+            <div class="col-md-6 col-12">
+                <h1 class="my-large-class fs-md-1 mb-4">Chi è Aulab</h1>
+                <p class="fw-lighter fs-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima tempore optio, aliquam dicta ipsam voluptatum sequi.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <footer class="footer-custom container-fluid d-flex text-center align-items-center">
-        <section class="img-fluid container-custom container order-md-2 col-md-6 col-sm-12">
-            <img src="Media/picture-marco-insabato-3.png" alt="">
-        </section>
-        <section class="col-md-6 fs-3 container-custom col-sm-12">
-        <p class="left ms-3">lo speaker</p>
-        <h1 class="titolone ms-3 left titolo-aulab">Marco Insabato</h1>
-        <p class="left ms-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate officia a magnam asperiores quo aspernatur eligendi? Officiis, ad, hic dolorum laborum dolore magni voluptas expedita pariatur tempore nemo quisquam autem?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptates iure voluptas alias eligendi, soluta ipsum, aliquid voluptatibus natus earum voluptatum officiis similique et cumque ab, impedit dignissimos saepe commodi!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex eligendi amet perferendis? Impedit libero deserunt exercitationem ex amet, ad sequi ipsa a adipisci vel assumenda debitis soluta, eaque, hic modi.</p>
-        </section>
+    <footer class="container-fluid container-custom footer-custom py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2 mb-4 text-center">
+                <img src="Media/picture-marco-insabato-3.png" class="img-fluid" alt="Marco Insabato">
+            </div>
+            <div class="col-md-6 text-center">
+                <p class="my-large-class fs-md-1">Lo Speaker</p>
+                <h1 class="fs-1 fs-md-1 mb-4">Marco Insabato</h1>
+                <p class="fw-lighter fs-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ad, hic dolorum laborum dolore magni voluptas expedita pariatur.
+                </p>
+            </div>
+        </div>
     </footer>
 
 

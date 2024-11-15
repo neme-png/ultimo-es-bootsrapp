@@ -2,16 +2,25 @@
     font-family: "Kanit", sans-serif;
 }
 
+body, html {
+    overflow-x: hidden; /* Impedisce lo scroll orizzontale */
+    margin: 0; /* Rimuove margini non necessari che possono causare il problema */
+    padding: 0; /* Rimuove padding che potrebbe causare problemi */
+}
+
 
 h1, h2, h3, .h1, .h2, .h3{
     font-family: "Genos", sans-serif;
 }
 
-.header-custom{
+header{
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     background-image: url(Media/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main{
@@ -28,45 +37,27 @@ main{
     height: 100vh;
 }
 
-.aulab-logo{
-    width: 400px;
-    height: auto;
-}
-
 .titolo-aulab{
     color: var(--yl);
 }
 
 .footer-custom{
     background-image: url(Media/bg-3.jpg);
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.left{
-    text-align: left;
-}
 .img-custom{
     width: 400px;
     height: auto;
-}
-
-.col-rt{
-    min-height: 100%;
 }
 
 .container-custom{
     color: white;
 }
 
-.titolone{
-    font-size: 60px;
-}
 
-.Titolo{
-    font-size: 70px;
-}
 
 /* ICONS */
 
@@ -90,3 +81,18 @@ i{
 .iscriviti:hover{
     background-color: var(--yl);
     color:black}
+
+/* media queries */
+@media (min-width: 992px) {
+    .my-large-class {
+      font-size: 70px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .header-custom img {
+        max-width: 50%; /* Riduci la dimensione del logo */
+        margin: 0 auto; /* Centra il logo */
+        display: block;
+    }
+}
