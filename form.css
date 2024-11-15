@@ -21,7 +21,7 @@ header {
 .container {
     width: 40vw;
     height: 99vh;
-    background-color: #3B1E54; /* Non tocco il colore */
+    background-color: #3B1E54;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     color: white;
@@ -37,10 +37,11 @@ header {
 i {
     color: white;
     margin-top: 50px;
-    border: 1px solid #ffff01; /* Non tocco il colore */
+    border: 1px solid #ffff01;
     border-radius: 50%;
     padding: 40px;
-    background-color: #ffff01; /* Non tocco il colore */
+    background-color: #ffff01;
+    font-size: 64px;
 }
 
 /* Responsività per schermi piccoli */
@@ -79,7 +80,6 @@ i {
         font-size: 20px; /* Icona più piccola */
     }
 }
-
 
 
 
